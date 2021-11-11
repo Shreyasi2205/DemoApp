@@ -1,5 +1,9 @@
 jdk:
   - openjdk11
 install:
+<<<<<<< HEAD
   install:
     - ./gradlew build :lib:publishToMavenLocal
+=======
+  - ./scripts/prepareJitpackEnvironment.sh
+>>>>>>> origin/master
