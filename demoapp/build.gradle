@@ -55,7 +55,7 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.github.Shreyasi2205'
+                groupId = 'com.example.demoapp'
                 artifactId = 'final'
                 version = '1.0'
             }
