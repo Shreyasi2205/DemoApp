@@ -58,8 +58,8 @@ afterEvaluate {
 
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.github.Shreyasi2205'
-                artifactId = 'DemoApp'
-                version = 'master-SNAPSHOT'
+                artifactId = 'Login Library3'
+                version = '1.0.7'
             }
 
         }
