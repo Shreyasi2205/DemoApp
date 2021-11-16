@@ -2,9 +2,10 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
     id 'maven-publish'
+   // id 'com.github.dcendents.android-maven'
 }
 
-
+group= 'com.github.Shreyasi2205'
 
 android {
     compileSdk 31
@@ -48,20 +49,30 @@ dependencies {
 
 // Because the components are created only during the afterEvaluate phase, you must
 // configure your publications using the afterEvaluate() lifecycle method.
-afterEvaluate {
-    publishing {
-        publications {
-            // Creates a Maven publication called "release".
-            release(MavenPublication) {
-                // Applies the component for the release build variant.
-                from components.release
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            // Creates a Maven publication called "release".
+//            release(MavenPublication) {
+//                // Applies the component for the release build variant.
+//                from components.release
+//
+//                // You can then customize attributes of the publication as shown below.
+//                groupId = 'com.github.Shreyasi2205'
+//                artifactId = 'Login Library3'
+//                version = '1.0.8'
+//            }
+//            // Creates a Maven publication called “debug”.
+//            debug(MavenPublication) {
+//                // Applies the component for the debug build variant.
+//                from components.debug
+//
+//                groupId = 'com.github.Shreyasi2205'
+//                artifactId = 'Login Library3'
+//                version = '1.0.8'
+//            }
+//
+//        }
+//    }
+//}
 
-                // You can then customize attributes of the publication as shown below.
-                groupId = 'com.github.Shreyasi2205'
-                artifactId = 'Login Library3'
-                version = '1.0.7'
-            }
-
-        }
-    }
-}
